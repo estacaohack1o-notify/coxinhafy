@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+
+nav{
+  background-color: #222326;
+
+}
+
+nav > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > div > span{
+  background-image: url('.\img\logo.svg');
+}
+
+nav > div > ul{
+  display: flex;
+}
+
+nav > div > ul >li{
+  list-style: none;
+  padding: 28px 17px;
+  font-weight: bold;
+}
+
+nav > div > ul > li > a{
+  text-decoration: none;
+  color: white;
+}
+
+nav > div > ul > li > a:hover{
+  color: #1DB954;
+}
+
+.separador{
+color: white;
+cursor: default;
+user-select: none;
+}
+
+
+@media (min-width: 992px) {
+
+  .mobile{
+    display: none;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .desk{
+    display: none;
+  }
+
+
+  nav > div > ul{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+  }
+
+
+
+}
